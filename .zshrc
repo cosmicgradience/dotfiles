@@ -31,9 +31,9 @@ alias pkgcount='pacman -Q | wc -l'
 
 export BAT_THEME="base16" 
 
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # uncomment this line for arch-based distros
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # this is how it works on debian-based distros
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
