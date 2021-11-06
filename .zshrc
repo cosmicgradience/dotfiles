@@ -1,8 +1,6 @@
-
 bindkey -v 
 
 # Prompt settings - nothing fancy here
-
 autoload -U colors && colors
 
 white=$(tput setaf 15);
@@ -18,23 +16,13 @@ PS1="%B%{${white}%}%n%{$fg[white]%}@%{$fg[green]%}%M %{$fg[yellow]%}%~%{$reset%}
 # getting the "I keep typing this wrong" aliases out of the way 
 
 alias vim='nvim'
-alias cat='bat'
-
-#using debian-based distros is fun until you forget about this small change
-alias bat='batcat'
-alias ll='exa -la'
-
-# some more userful ones
-alias pkgcount='pacman -Q | wc -l'
+alias ls='exa -la'
 
 # exporting and sourcing
 
-export BAT_THEME="base16" 
+export BAT_THEME="gruvbox" 
 
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# uncomment this line for arch-based distros
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# this is how it works on debian-based distros
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
