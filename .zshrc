@@ -19,6 +19,9 @@ PS1="%B%{${white}%}%n%{$fg[white]%}@%{$fg[green]%}%M %{$fg[yellow]%}%~%{$reset%}
 
 alias vim='nvim'
 alias cat='bat'
+
+#using debian-based distros is fun until you forget about this small change
+alias bat='batcat'
 alias ll='exa -la'
 
 # some more userful ones
